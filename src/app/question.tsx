@@ -21,14 +21,14 @@ const AccordionItem = ({ header, ...rest }) => (
     className="border-b"
     buttonProps={{
       className: ({ isEnter }) =>
-        `flex w-full p-4 text-left hover:text-soft-red transition-text duration-200 ${
+        `flex w-full py-4 lg:px-0 text-left hover:text-soft-red transition-text duration-200 ${
           isEnter && "font-bold"
         }`
     }}
     contentProps={{
       className: "transition-height duration-200 ease-out"
     }}
-    panelProps={{ className: "px-4 pb-4" }}
+    panelProps={{ className: "px-0 pr-5 pb-4" }}
   />
 );
 
@@ -36,41 +36,21 @@ const AccordionItem = ({ header, ...rest }) => (
 export default function Questions() {
   return (
     <Accordion className="w-full h-3/4 flex flex-col justify-center" transition transitionTimeout={250}>
-      <AccordionItem header="Question 1">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti maiores cupiditate vitae.
+      <AccordionItem header="How many team members can I invite?">
+        You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
       </AccordionItem>
-      <AccordionItem header="Question 2">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti maiores cupiditate vitae.
+      <AccordionItem header="What is the maximum file upload size?">
+        No more than 2GB. All files in your account must fit your allotted storage space.
       </AccordionItem>
-      <AccordionItem header="Question 3">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti maiores cupiditate vitae.
+      <AccordionItem header="How do I reset my password?">
+      Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.
       </AccordionItem>
-      <AccordionItem header="Question 4">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti maiores cupiditate vitae.
+      <AccordionItem header="Can I cancel my subscription?">
+        Yes! Send us a message and we’ll process your request no questions asked.
       </AccordionItem>
-      <AccordionItem header="Question 5">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti maiores cupiditate vitae.
+      <AccordionItem header="Do you provide additional support?">
+        Chat and email support is available 24/7. Phone lines are open during normal business hours.
       </AccordionItem>
     </Accordion>
   );
   }
-  // <ul className='h-3/4 flex flex-col justify-between bg-green-500'>
-  //   <li className=''>
-  //     <div className='flex flex-row justify-between items-center'>
-  //       <p className='font-bold'>Question question question?</p>
-  //       <div style={{ position: 'relative', width: '12px', height: '9px' }}>
-  //         <Image
-  //           src={arrowDown}
-  //           alt=''
-  //           // width={10}
-  //           // height={7}
-  //           layout="fill"
-  //           objectFit='cover'
-  //         />
-  //       </div>
-  //     </div>
-  //     <div>
-  //       <p>Answer answer answer answer answer answer answer answer answer answer</p>
-  //     </div>
-  //   </li>
-  // </ul>
