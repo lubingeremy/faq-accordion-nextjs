@@ -21,8 +21,8 @@ const AccordionItem = ({ header, ...rest }) => (
     className="border-b"
     buttonProps={{
       className: ({ isEnter }) =>
-        `flex w-full py-4 lg:px-0 text-left hover:text-soft-red transition-text duration-200 ${
-          isEnter && "font-bold"
+        `flex w-full py-4 lg:px-0 text-left hover:text-soft-red transition-text duration-200  ${
+          isEnter && "font-bold text-dark-blue"
         }`
     }}
     contentProps={{
@@ -35,7 +35,7 @@ const AccordionItem = ({ header, ...rest }) => (
 
 export default function Questions() {
   return (
-    <Accordion className="w-full h-3/4 flex flex-col justify-center" transition transitionTimeout={250}>
+    <Accordion className="w-full h-3/4 lg:h-4/5 flex flex-col text-xs text-grayish-blue" transition transitionTimeout={250}>
       <AccordionItem header="How many team members can I invite?">
         You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
       </AccordionItem>
