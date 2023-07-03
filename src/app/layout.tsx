@@ -15,7 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="h-screen flex justify-center items-center bg-pink-300 font-kumbh">{children}</body>
+      <body className="h-screen flex flex-col justify-center items-center bg-pink-300 font-kumbh">
+        {children}
+        <p>Work in progress solution to Frontend Mentor challenge - FAQ accordion card solution</p>
+      </body>
     </html>
   )
 }
