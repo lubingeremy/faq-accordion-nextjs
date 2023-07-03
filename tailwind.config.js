@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
-        '55per': '55%'
+        '55per': '55%',
+        // '76': '300px'
       },
       fontFamily: {
         'kumbh': ['Kumbh Sans', 'sans-serif'],
