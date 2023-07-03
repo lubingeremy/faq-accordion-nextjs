@@ -4,7 +4,7 @@ import Image from 'next/image'
 import arrowDown from '../../images/icon-arrow-down.svg'
 import { Accordion, AccordionItem as Item } from "@szhsin/react-accordion";
 
-const AccordionItem = ({ header, ...rest }) => (
+const AccordionItem = ({ header, ...rest }: {header: any}) => (
   <Item
     {...rest}
     header={({ state: { isEnter } }) => (
